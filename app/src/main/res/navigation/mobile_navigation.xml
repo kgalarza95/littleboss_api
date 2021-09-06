@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.littlebossapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_fragment_pedidos"
+            app:destination="@id/fragment_pedidos" />
+        <action
+            android:id="@+id/action_nav_home_to_producto_principal_fragment"
+            app:destination="@id/producto_principal_fragment" />
+        <action
+            android:id="@+id/action_nav_home_to_principal_cliente_fragment"
+            app:destination="@id/principal_cliente_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_pedidos"
+        android:name="com.example.littlebossapp.ui.pedidos.fragment_pedidos"
+        android:label="Menú Pedidos"
+        tools:layout="@layout/fragment_pedidos">
+        <action
+            android:id="@+id/action_fragment_pedidos_to_fragment_nuevo_pedido"
+            app:destination="@id/fragment_nuevo_pedido" />
+        <action
+            android:id="@+id/action_fragment_pedidos_to_fragment_lista_pedidos"
+            app:destination="@id/fragment_lista_pedidos" />
+    </fragment>
+    <fragment
+        android:id="@+id/producto_principal_fragment"
+        android:name="com.example.littlebossapp.producto_principal_fragment"
+        android:label="Menú productos"
+        tools:layout="@layout/fragment_producto_principal" >
+        <action
+            android:id="@+id/action_producto_principal_fragment_to_producto_registro_fragment"
+            app:destination="@id/producto_registro_fragment" />
+        <action
+            android:id="@+id/action_producto_principal_fragment_to_producto_registro_fragment2"
+            app:destination="@id/producto_registro_fragment" />
+        <action
+            android:id="@+id/action_producto_principal_fragment_to_producto_registro_fragment3"
+            app:destination="@id/producto_registro_fragment" />
+        <action
+            android:id="@+id/action_producto_principal_fragment_to_producto_registro_fragment4"
+            app:destination="@id/producto_registro_fragment" />
+        <action
+            android:id="@+id/action_producto_principal_fragment_to_producto_registro_fragment5"
+            app:destination="@id/producto_registro_fragment" />
+        <action
+            android:id="@+id/action_producto_principal_fragment_to_producto_registro_fragment6"
+            app:destination="@id/producto_registro_fragment" />
+        <action
+            android:id="@+id/action_producto_principal_fragment_to_producto_registro_fragment7"
+            app:destination="@id/producto_registro_fragment" />
+        <action
+            android:id="@+id/action_producto_principal_fragment_to_producto_ver_fragment"
+            app:destination="@id/producto_ver_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/principal_cliente_fragment"
+        android:name="com.example.littlebossapp.principal_cliente_fragment"
+        android:label="Menú clientes"
+        tools:layout="@layout/fragment_principal_cliente" >
+        <action
+            android:id="@+id/action_principal_cliente_fragment_to_registrar_cliente_fragment"
+            app:destination="@id/registrar_cliente_fragment" />
+        <action
+            android:id="@+id/action_principal_cliente_fragment_to_editar_cliente_fragment"
+            app:destination="@id/editar_cliente_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrar_cliente_fragment"
+        android:name="com.example.littlebossapp.registrar_cliente_fragment"
+        android:label="Registrar cliente"
+        tools:layout="@layout/fragment_registrar_cliente" />
+    <fragment
+        android:id="@+id/editar_cliente_fragment"
+        android:name="com.example.littlebossapp.editar_cliente_fragment"
+        android:label="Editar clientes"
+        tools:layout="@layout/fragment_editar_cliente" />
+    <fragment
+        android:id="@+id/producto_registro_fragment"
+        android:name="com.example.littlebossapp.producto_registro_fragment"
+        android:label="Registro de producto"
+        tools:layout="@layout/producto_registro_fragment" />
+    <fragment
+        android:id="@+id/producto_ver_fragment"
+        android:name="com.example.littlebossapp.producto_ver_fragment"
+        android:label="Opciones Producto"
+        tools:layout="@layout/producto_ver_fragment">
+        <action
+            android:id="@+id/action_producto_ver_fragment_to_producto_editar_fragment"
+            app:destination="@id/producto_editar_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/producto_editar_fragment"
+        android:name="com.example.littlebossapp.producto_editar_fragment"
+        android:label="Editar productos"
+        tools:layout="@layout/producto_editar_fragment" />
+    <fragment
+        android:id="@+id/fragment_nuevo_pedido"
+        android:name="com.example.littlebossapp.fragment_nuevo_pedido"
+        android:label="Registro de pedido"
+        tools:layout="@layout/fragment_nuevo_pedido" />
+    <fragment
+        android:id="@+id/fragment_lista_pedidos"
+        android:name="com.example.littlebossapp.fragment_lista_pedidos"
+        android:label="Opciones"
+        tools:layout="@layout/fragment_lista_pedidos" />
+</navigation>

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".fragment_nuevo_pedido">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foregroundGravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:src="@mipmap/nota" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_titulocodigo"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/estilo_text"
+                android:gravity="center"
+                android:text="Código"
+                android:textColor="#0E0E0E"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edtCodigop"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/txt_ingreso_pedido"
+                android:ems="10"
+                android:hint="Ingrese código de pedido"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_titulo_descripcion_pedido"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/estilo_text"
+                android:gravity="center"
+                android:text="Descripción"
+                android:textColor="#0E0E0E" />
+
+            <EditText
+                android:id="@+id/edtDescripcionp"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/txt_ingreso_pedido"
+                android:ems="10"
+                android:hint="Ingrese descripción del pedido"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_titulo_fecha_registro"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/estilo_text"
+                android:gravity="center"
+                android:text="Fecha de registro"
+                android:textColor="#0E0E0E"
+                android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/edtFecharegistrop"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/txt_ingreso_pedido"
+                android:ems="10"
+                android:hint="DD-MM-AA"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_titulo_fecha_entrega"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/estilo_text"
+                android:gravity="center"
+                android:text="Fecha de entrega"
+                android:textColor="#0E0E0E"
+                android:textSize="11sp" />
+
+            <EditText
+                android:id="@+id/edtFechaEntregap"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/txt_ingreso_pedido"
+                android:ems="10"
+                android:hint="DD-MM-AA"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_titulo_cantidad_pedido"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/estilo_text"
+                android:gravity="center"
+                android:text="Cantidad"
+                android:textColor="#0E0E0E" />
+
+            <EditText
+                android:id="@+id/edtCantidadp"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/txt_ingreso_pedido"
+                android:ems="10"
+                android:hint="Ingrese cantidad de productos"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_titulo_costop"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/estilo_text"
+                android:gravity="center"
+                android:text="Costo"
+                android:textColor="#0E0E0E"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edtCostoEnviop"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/txt_ingreso_pedido"
+                android:ems="10"
+                android:hint="Ingrese costo de pedido"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_titulocliente"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/estilo_text"
+                android:gravity="center"
+                android:text="Cliente"
+                android:textColor="#0E0E0E"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edtClientep"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/txt_ingreso_pedido"
+                android:ems="10"
+                android:hint="Ingrese nombre del cliente"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_titulo_pago"
+                android:layout_width="1dp"
+                android:layout_height="40sp"
+                android:layout_marginEnd="2sp"
+                android:layout_marginRight="2sp"
+                android:layout_weight="1"
+                android:background="@drawable/estilo_text"
+                android:gravity="center"
+                android:text="Pago total"
+                android:textColor="#0E0E0E"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edtPagoTotalp"
+                android:layout_width="5sp"
+                android:layout_height="42dp"
+                android:layout_marginStart="2sp"
+                android:layout_marginLeft="2sp"
+                android:layout_marginEnd="2sp"
+                android:layout_marginRight="2sp"
+                android:layout_weight="1"
+                android:background="@drawable/txt_ingreso_pedido"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="presione boton"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_calcularpagop"
+                android:layout_width="5sp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2sp"
+                android:layout_marginLeft="2sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginRight="15sp"
+                android:layout_weight="1"
+                android:text="Calcular"
+                android:textColor="#040202"
+                android:textStyle="bold"
+                app:backgroundTint="#F7918787"
+                app:cornerRadius="120sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAgregar"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:text="Guardar"
+                app:backgroundTint="#412554"
+                app:cornerRadius="40dp"
+                app:icon="@android:drawable/ic_menu_save" />
+
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="160dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="5sp"
+                android:layout_marginLeft="10sp"
+                android:text="Limpiar"
+                app:backgroundTint="#412554"
+                app:cornerRadius="40dp"
+                app:icon="@android:drawable/ic_delete" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>

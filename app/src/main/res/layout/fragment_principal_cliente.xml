@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".principal_cliente_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtCodigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:textSize="50dp"
+                android:fontFamily="cursive"
+                android:text="Gestionar clientes"></TextView>
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/cliente"/>
+
+            <Button
+                android:id="@+id/btnClienteR"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@color/cardview_dark_background"
+                android:gravity="center"
+                android:text="@string/btnClientesRegistrar"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/colorBoton1"></Button>>
+
+            <Button
+                android:id="@+id/btnClienteEd"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/btnClientesEditar"
+                app:backgroundTint="@color/colorBoton2"></Button>>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

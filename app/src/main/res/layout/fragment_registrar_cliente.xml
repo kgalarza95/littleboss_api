@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registrar_cliente_fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".RegistrarClienteActivity">
+
+
+            <TextView
+                android:id="@+id/txtCRegistrarCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="cursive"
+                android:text="Registrar cliente"
+                android:textColor="@color/black"
+                android:textSize="50dp"></TextView>
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="180dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/nota" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtCodigo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif"
+                        android:text="Número de cédula"
+                        android:textSize="16dp"></TextView>
+
+                    <EditText
+                        android:id="@+id/edtCodigoc"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:ems="10"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtNombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif"
+                        android:text="Nombre"
+                        android:textSize="16dp"></TextView>
+
+                    <EditText
+                        android:id="@+id/edtNombrec"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:ems="10"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtApellido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif"
+                        android:text="Apellido"
+                        android:textSize="16dp"></TextView>
+
+                    <EditText
+                        android:id="@+id/edtApellidoc"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtcorreo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif"
+                        android:text="Correo"
+                        android:textSize="16dp"></TextView>
+
+                    <EditText
+                        android:id="@+id/edtCorreoc"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:ems="10"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtCelular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif"
+                        android:text="Número Celular"
+                        android:textSize="16dp"></TextView>
+
+                    <EditText
+                        android:id="@+id/edtCelularc"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtCiudad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif"
+                        android:text="Ciudad"
+                        android:textSize="16dp"></TextView>
+
+                    <EditText
+                        android:id="@+id/edtCiudadc"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:ems="10"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        android:id="@+id/txtUbicación"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif"
+                        android:text="Ubicación"
+                        android:textSize="16dp"></TextView>
+
+                    <EditText
+                        android:id="@+id/edtUbicacionc"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:ems="10"
+                        android:textSize="20dp" />
+
+
+                    <Button
+                        android:id="@+id/btnAgregar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/btnClientesRegistrar" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
+
+    <!-- <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/map"
+                         android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        tools:context=".RegistrarClienteFragment"/> -->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.littlebossapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Littlebossapp"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity_codigo_unico"></activity>
+        <activity android:name=".activity_registrar_usuario" />
+        <activity android:name=".activity_producto_ver" />
+        <activity
+            android:name=".littleboss"
+            android:label="@string/title_activity_littleboss"
+            android:theme="@style/Theme.Littlebossapp.NoActionBar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

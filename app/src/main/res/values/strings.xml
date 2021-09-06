@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">littlebossapp</string>
+    <string name="title_activity_littleboss">littleboss</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="btnClientesRegistrar"> Registrar clientes</string>
+    <string name="btnClientesEliminar"> Eliminar clientes</string>
+    <string name="btnClientesEditar"> Editar clientes</string>
+
+    <string name="nombreArticulo"> Ingrese Nombre</string>
+    <string name="codigo"> Ingrese Código</string>
+    <string name="tipo"> Ingrese Tipo</string>
+    <string name="precio"> Ingrese Precio</string>
+    <string name="cantidad"> Ingrese Cantidad</string>
+    <string name="descripcion"> Ingrese Descripción</string>
+    <string name="btMRaceptar"> Agregar</string>
+    <string name="btMRcancelar"> Cancelar</string>
+    <string name="btMReditar"> Actualizar</string>
+    <string name="btMRbuscar"> Buscar</string>
+    <string name="btMRlimpiar"> Limpiar</string>
+    <string name="btMReliminar"> Eliminar</string>
+    <string name="registrate">Si eres nuevo, registrate!</string>
+
+</resources>
