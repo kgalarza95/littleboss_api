@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         textViewtxtRegistroNuevo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), registrar_cliente_fragment.class);
+                Intent intent = new Intent(getApplicationContext(), activity_registrar_usuario.class);
                 startActivity(intent);
                 finish();
 

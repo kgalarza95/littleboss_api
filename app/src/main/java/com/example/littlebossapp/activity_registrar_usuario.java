@@ -99,15 +99,17 @@ public class activity_registrar_usuario extends AppCompatActivity {
                                     //End ProgressBar (Set visibility to GONE)
                                     if(result.equals("Ingreso exitoso")){
 
-                                        Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(getApplicationContext(), littleboss.class);
-                                        startActivity(intent);
-                                        finish();
+
 
                                     }
                                     else{
                                         Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
                                     }
+
+                                    Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                    startActivity(intent);
+                                    finish();
 
                                 }
                             }
@@ -122,7 +124,17 @@ public class activity_registrar_usuario extends AppCompatActivity {
             }
         });
 
-
+        btnCancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
+
+
+
 }

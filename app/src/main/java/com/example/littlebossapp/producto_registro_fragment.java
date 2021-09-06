@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Handler;
 import android.os.Looper;
@@ -101,9 +102,6 @@ public class producto_registro_fragment extends Fragment {
                                     if(result.equals("Ingreso exitoso")){
 
                                         Toast.makeText(getContext(),result,Toast.LENGTH_SHORT).show();
-                                        Intent intent = new Intent(getContext(), littleboss.class);
-                                        startActivity(intent);
-                                        getActivity().finish();
 
                                     }
                                     else{

@@ -34,7 +34,7 @@ import java.util.Map;
 public class activity_codigo_unico extends AppCompatActivity {
 
     EditText edtCodigop, edtDescripcionp, edtFecharegistrop, edtFechaEntregap, edtCantidadp, edtCostoEnviop, edtClientep, edtPagoTotalp;
-    Button btnAgregar, btnEditar,btnEliminar, btnBuscar, btnLimpiar;
+    Button btnAgregar, btnEditar,btnEliminar, btnBuscar, btnLimpiar, btnRegresar;
 
 
     RequestQueue requestQueue;
@@ -58,6 +58,7 @@ public class activity_codigo_unico extends AppCompatActivity {
         edtPagoTotalp=(EditText)findViewById(R.id.edtPagoTotalp);
         //btnAgregar=(Button) findViewById(R.id.btnAgregar);
         btnBuscar=(Button) findViewById(R.id.btnBuscar);
+        btnRegresar=(Button)findViewById(R.id.btnRegresar);
         //btnEditar=(Button) findViewById(R.id.btnEditar);
         //btnEliminar=(Button) findViewById(R.id.btnEliminar);
         //btnLimpiar=(Button) findViewById(R.id.btnLimpiar);
@@ -84,6 +85,15 @@ public class activity_codigo_unico extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buscarProducto("http://192.168.100.14/mysql_littleboss5/buscar_pedido.php?codigo="+edtCodigop.getText()+"");
+            }
+        });
+
+        btnRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 /*

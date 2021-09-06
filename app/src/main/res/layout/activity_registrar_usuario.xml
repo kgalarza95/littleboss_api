@@ -26,11 +26,10 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/imageView55"
-            android:layout_width="150dp"
-            android:layout_height="170dp"
-            android:layout_marginBottom="5dp"
-            app:srcCompat="@mipmap/abrircaja" />
+            android:id="@+id/imageView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cliente" />
 
         <TextView
             android:id="@+id/textView66"
@@ -186,7 +185,7 @@
 
                 <TextView
                     android:id="@+id/textView33"
-                    android:layout_width="5dp"
+                    android:layout_width="8dp"
                     android:layout_height="30dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"

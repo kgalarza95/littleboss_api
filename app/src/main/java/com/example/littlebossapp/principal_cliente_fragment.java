@@ -24,9 +24,9 @@ public class principal_cliente_fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_pedidos, container, false);
-        btnClienteR=(Button)view.findViewById(R.id.btn_nuevo_producto);
-        btnClienteEd= (Button)view.findViewById(R.id.btn_lista_productos);
+        View view= inflater.inflate(R.layout.fragment_principal_cliente, container, false);
+        btnClienteR=(Button)view.findViewById(R.id.btnClienteR);
+        btnClienteEd= (Button)view.findViewById(R.id.btnClienteEd);
 
 
 

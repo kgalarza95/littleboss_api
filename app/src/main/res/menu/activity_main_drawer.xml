@@ -23,5 +23,7 @@
             android:id="@+id/principal_cliente_fragment"
             android:icon="@android:drawable/btn_star"
             android:title="Clientes" />
+
+
     </group>
 </menu>

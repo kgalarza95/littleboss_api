@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Handler;
 import android.os.Looper;
+import android.preference.EditTextPreference;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,6 +56,12 @@ public class fragment_nuevo_pedido extends Fragment {
         });
 */
 
+       btn_calcularpagop.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               calcular();
+           }
+       });
         btnAgregar.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -158,5 +165,17 @@ public class fragment_nuevo_pedido extends Fragment {
         EditTextedtCostoEnviop.setText("");
         EditTextedtClientep.setText("");
         EditTextedtPagoTotalp.setText("");
+    }
+
+    private void calcular(){
+
+        Integer cantidad;
+        Double  costo, resultado;
+
+        cantidad=Integer.valueOf(EditTextedtCantidadp.getText().toString());
+        costo=Double.valueOf(EditTextedtCostoEnviop.getText().toString());
+        resultado=cantidad*costo;
+        EditTextedtPagoTotalp.setText(""+resultado);
+
     }
 }
