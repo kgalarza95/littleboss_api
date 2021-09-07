@@ -107,7 +107,7 @@ public class registrar_cliente_fragment extends Fragment {
 
 
 
-                            PutData putData = new PutData("http://192.168.100.14/mysql_littleboss6_3/signup.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.100.7/mysql_littleboss6_3/signup.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     //progressBar.setVisibility(View.GONE);

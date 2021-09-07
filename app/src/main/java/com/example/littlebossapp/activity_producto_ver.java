@@ -82,7 +82,7 @@ public class activity_producto_ver extends AppCompatActivity {
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buscarProducto("http://192.168.100.14/mysql_littleboss/buscar_producto.php?codigo="+edtCodigo.getText()+"");
+                buscarProducto("http://192.168.100.7/mysql_littleboss/buscar_producto.php?codigo="+edtCodigo.getText()+"");
             }
         });
 

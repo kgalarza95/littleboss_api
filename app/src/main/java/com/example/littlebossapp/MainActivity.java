@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                            PutData putData = new PutData("http://192.168.100.14/mysql_littleboss6/login.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.100.7/mysql_littleboss6/login.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     //progressBar.setVisibility(View.GONE);

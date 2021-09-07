@@ -85,7 +85,7 @@ public class editar_cliente_fragment extends Fragment {
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buscarProducto("http://192.168.100.14/mysql_littleboss3/buscar_cliente.php?codigo="+edtCodigoc.getText()+"");
+                buscarProducto("http://192.168.100.7/mysql_littleboss3/buscar_cliente.php?codigo="+edtCodigoc.getText()+"");
             }
         });
 
@@ -100,7 +100,7 @@ public class editar_cliente_fragment extends Fragment {
         btnEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ejecutarServicio("http://192.168.100.14/mysql_littleboss3/editar_cliente.php");
+                ejecutarServicio("http://192.168.100.7/mysql_littleboss3/editar_cliente.php");
 
             }
         });
@@ -108,7 +108,7 @@ public class editar_cliente_fragment extends Fragment {
         btnEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                eliminarProducto("http://192.168.100.14/mysql_littleboss3/eliminar_cliente.php");
+                eliminarProducto("http://192.168.100.7/mysql_littleboss3/eliminar_cliente.php");
 
             }
         });

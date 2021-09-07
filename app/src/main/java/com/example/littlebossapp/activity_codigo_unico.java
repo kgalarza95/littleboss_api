@@ -84,7 +84,7 @@ public class activity_codigo_unico extends AppCompatActivity {
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buscarProducto("http://192.168.100.14/mysql_littleboss5/buscar_pedido.php?codigo="+edtCodigop.getText()+"");
+                buscarProducto("http://192.168.100.7/mysql_littleboss5/buscar_pedido.php?codigo="+edtCodigop.getText()+"");
             }
         });
 
