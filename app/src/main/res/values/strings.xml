@@ -12,7 +12,7 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
 
-    
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
@@ -33,5 +33,6 @@
     <string name="btMRlimpiar"> Limpiar</string>
     <string name="btMReliminar"> Eliminar</string>
     <string name="registrate">Si eres nuevo, registrate!</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

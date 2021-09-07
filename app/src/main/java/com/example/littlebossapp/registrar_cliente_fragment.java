@@ -154,4 +154,6 @@ public class registrar_cliente_fragment extends Fragment {
         EditTextedtUbicacionc.setText("");
 
     }*/
+
+
 }
