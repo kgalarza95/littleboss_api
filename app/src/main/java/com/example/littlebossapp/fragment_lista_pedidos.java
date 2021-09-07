@@ -3,7 +3,9 @@ package com.example.littlebossapp;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentResultListener;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,7 +35,7 @@ public class fragment_lista_pedidos extends Fragment {
 
     EditText edtCodigop, edtDescripcionp, edtFecharegistrop, edtFechaEntregap, edtCantidadp, edtCostoEnviop, edtClientep, edtPagoTotalp;
     Button btnAgregar, btnEditar, btnEliminar, btnBuscar, btnLimpiar, btncancelar;
-
+    private String IP = "192.168.100.14";//"192.168.100.14";
 
     RequestQueue requestQueue;
     //TextView textViewLogin;
@@ -122,6 +124,19 @@ public class fragment_lista_pedidos extends Fragment {
             }
         });
 
+        getParentFragmentManager().setFragmentResultListener("parametros", this,
+                new FragmentResultListener() {
+                    @Override
+                    public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
+                        String fecha = result.getString("fecha");
+                        System.out.println("=============================================");
+                        System.out.println("llega ==> "+fecha);
+                        if(!fecha.isEmpty()){
+                            Toast.makeText(getActivity(), "busqueda por fecha " + fecha, Toast.LENGTH_SHORT).show();
+                            buscarProductoFecha("http://"+IP+":80/mysql_littleboss2/buscar_pedido_fecha.php?fecha="+fecha);
+                        }
+                    }
+                });
         return view;
     }
     private void ejecutarServicio(String URL){
@@ -230,5 +245,50 @@ public class fragment_lista_pedidos extends Fragment {
         edtPagoTotalp.setText("");
     }
 
+    /**
+     * Buscar un producto por fecha
+     */
+    private void buscarProductoFecha(String URL) {
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(URL, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+                JSONObject jsonObject = null;
+                for (int i = 0; i < response.length(); i++) {
+                    try {
+                        jsonObject = response.getJSONObject(i);
+                        System.out.println("========================================================");
+                        System.out.println("LLamada por fecha");
+                        System.out.println("repsuesta json PIN: " + jsonObject.getString("descripcion"));
+                        if(!jsonObject.getString("fechaEntrega").isEmpty()){
+                            edtCodigop.setText(jsonObject.getString("codigo"));
+                            edtDescripcionp.setText(jsonObject.getString("descripcion"));
+                            edtFecharegistrop.setText(jsonObject.getString("fecharegistrop"));
+                            edtFechaEntregap.setText(jsonObject.getString("fechaEntrega"));
+                            edtCantidadp.setText(jsonObject.getString("cantidad"));
+                            edtCostoEnviop.setText(jsonObject.getString("costoEnvio"));
+                            edtClientep.setText(jsonObject.getString("cliente"));
+                            edtPagoTotalp.setText(jsonObject.getString("pagototal"));
+                        }else{
+                            System.out.println("No hay datos con la fecha seleccionada");
+                            Toast.makeText(getActivity(), "No hay Datos", Toast.LENGTH_LONG).show();
+                        }
+                    } catch (JSONException e) {
+                        System.out.println("Ocurrio un error");
+                        System.out.println("===> "+e);
+                        Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                System.out.println("Error en la conexion");
+                Toast.makeText(getActivity(), "Error de Conexión " + error.toString(), Toast.LENGTH_SHORT).show();
+
+            }
+        });
+        requestQueue = Volley.newRequestQueue(getActivity());
+        requestQueue.add(jsonArrayRequest);
+    }
 
 }
