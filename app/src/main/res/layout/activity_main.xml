@@ -89,8 +89,10 @@
                         android:drawableRight="@drawable/ic_pass"
                         android:ems="10"
                         android:hint="Ingrese su contraseña"
-                        android:inputType="numberPassword"
+                        android:inputType="textPassword"
                         android:textColor="#FBF3F3" />
+
+
 
 
                 </LinearLayout>

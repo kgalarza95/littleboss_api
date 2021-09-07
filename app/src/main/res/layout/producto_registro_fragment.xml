@@ -8,6 +8,11 @@
     android:foregroundGravity="center"
     tools:context=".producto_registro_fragment">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center">
+
     <LinearLayout
         android:layout_width="399dp"
         android:layout_height="729dp"
@@ -86,9 +91,10 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
+                    android:layout_marginEnd="5dp"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -150,8 +156,9 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -214,8 +221,9 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -276,8 +284,9 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -339,8 +348,9 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -500,5 +510,7 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>

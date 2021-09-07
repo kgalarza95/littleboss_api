@@ -34,5 +34,6 @@
     <string name="btMReliminar"> Eliminar</string>
     <string name="registrate">Si eres nuevo, registrate!</string>
     <string name="title_activity_maps">Map</string>
+    <string name="cerrar_sesion">cerrar_sesion</string>
 
 </resources>
