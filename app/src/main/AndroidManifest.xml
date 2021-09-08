@@ -31,11 +31,8 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBlCYDlQ9jysdn6ik1N1Um-UdWpnmwspUg" />
+            android:value="@string/google_maps_key" />
 
-        <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
         <activity android:name=".activity_codigo_unico" />
         <activity android:name=".activity_registrar_usuario" />
         <activity android:name=".activity_producto_ver" />

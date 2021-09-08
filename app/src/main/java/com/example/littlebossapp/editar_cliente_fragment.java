@@ -3,7 +3,10 @@ package com.example.littlebossapp;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentResultListener;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +24,7 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.jetbrains.annotations.NotNull;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -32,7 +36,7 @@ import java.util.Map;
 public class editar_cliente_fragment extends Fragment {
 
     EditText edtCodigoc, edtNombrec, edtApellidoc, edtCorreoc, edtCelularc, edtCiudadc, edtUbicacionc;
-    Button btnAgregar, btnEditar, btnEliminar, btnBuscar, btnLimpiar, btncancelar;
+    Button btnAgregar, btnEditar, btnEliminar, btnBuscar, btnLimpiar, btncancelar, btnUbicación;
 
 
     RequestQueue requestQueue;
@@ -62,6 +66,34 @@ public class editar_cliente_fragment extends Fragment {
         btnLimpiar=(Button) view.findViewById(R.id.btnLimpiar);
         btncancelar=(Button) view.findViewById(R.id.btncancelar);
         //progressBar = findViewById(R.id.progress);
+
+
+        btnUbicación = view.findViewById(R.id.btnUbicación);
+
+        btnUbicación.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment nuevoFragmento = new MapsFragment2();
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.nav_host_fragment, nuevoFragmento);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+
+        getParentFragmentManager().setFragmentResultListener("key", this, new FragmentResultListener() {
+            @Override
+            public void onFragmentResult(@NonNull @NotNull String requestKey, @NonNull @NotNull Bundle bundle) {
+                String Lng = bundle.getString("Lng");
+                String Lat = bundle.getString("Lat");
+                edtCiudadc.setText(Lng);
+                edtUbicacionc.setText(Lat);
+            }
+        });
+
+
+
+
 
         /*textViewLogin.setOnClickListener(new View.OnClickListener() {
             @Override

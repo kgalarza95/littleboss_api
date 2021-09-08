@@ -45,6 +45,48 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/txtCiudad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif"
+                        android:text="Longitud"
+                        android:textSize="16dp"></TextView>
+
+                    <EditText
+                        android:id="@+id/edtCiudadc"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:textSize="20dp" />
+
+
+                    <TextView
+                        android:id="@+id/txtUbicación"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif"
+                        android:text="Latitud"
+                        android:textSize="16dp"></TextView>
+
+                    <EditText
+                        android:id="@+id/edtUbicacionc"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:textSize="20dp" />
+                    <Button
+                        android:id="@+id/btnUbicación"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="10dp"
+                        android:text="Click para registrar la ubicación" />
+
+                    <TextView
                         android:id="@+id/txtCodigo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -131,40 +173,7 @@
                         android:inputType="number"
                         android:textSize="20dp" />
 
-                    <TextView
-                        android:id="@+id/txtCiudad"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="serif"
-                        android:text="Ciudad"
-                        android:textSize="16dp"></TextView>
 
-                    <EditText
-                        android:id="@+id/edtCiudadc"
-                        android:layout_width="250dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:ems="10"
-                        android:textSize="20dp" />
-
-
-                    <TextView
-                        android:id="@+id/txtUbicación"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="serif"
-                        android:text="Ubicación"
-                        android:textSize="16dp"></TextView>
-
-                    <EditText
-                        android:id="@+id/edtUbicacionc"
-                        android:layout_width="250dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:ems="10"
-                        android:textSize="20dp" />
 
 
                     <Button
