@@ -86,8 +86,8 @@ public class editar_cliente_fragment extends Fragment {
             public void onFragmentResult(@NonNull @NotNull String requestKey, @NonNull @NotNull Bundle bundle) {
                 String Lng = bundle.getString("Lng");
                 String Lat = bundle.getString("Lat");
-                edtCiudadc.setText(Lng);
-                edtUbicacionc.setText(Lat);
+                edtCiudadc.setText(Lat);
+                edtUbicacionc.setText(Lng);
             }
         });
 

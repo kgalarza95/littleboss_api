@@ -84,8 +84,8 @@ public class registrar_cliente_fragment extends Fragment implements OnMapReadyCa
             public void onFragmentResult(@NonNull @NotNull String requestKey, @NonNull @NotNull Bundle bundle) {
                 String Lng = bundle.getString("Lng");
                 String Lat = bundle.getString("Lat");
-                EditTextedtUbicacionc.setText(Lng);
-                EditTextedtCiudadc.setText(Lat);
+                EditTextedtUbicacionc.setText(Lat);
+                EditTextedtCiudadc.setText(Lng);
             }
         });
 
