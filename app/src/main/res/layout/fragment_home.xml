@@ -45,7 +45,8 @@
                     android:layout_weight="1"
                     android:background="#00FFFFFF"
                     android:scaleType="fitCenter"
-                    android:src="@mipmap/nota" />
+                    android:src="@mipmap/nota"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:id="@+id/txtagregar_pedido"
@@ -81,7 +82,8 @@
                     android:layout_weight="1"
                     android:background="#00FFFFFF"
                     android:scaleType="fitCenter"
-                    android:src="@mipmap/agregararchivo" />
+                    android:src="@mipmap/agregararchivo"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:id="@+id/txtagregar_producto"
@@ -116,7 +118,8 @@
                     android:layout_weight="1"
                     android:background="#00FFFFFF"
                     android:scaleType="fitCenter"
-                    android:src="@mipmap/contactos" />
+                    android:src="@mipmap/contactos"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
                 <TextView
                     android:id="@+id/txtagregar_cliente"
@@ -152,7 +155,8 @@
                     android:layout_weight="1"
                     android:background="#00FFFFFF"
                     android:scaleType="fitCenter"
-                    android:src="@mipmap/calendario" />
+                    android:src="@mipmap/calendario"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:id="@+id/txtcalendario"

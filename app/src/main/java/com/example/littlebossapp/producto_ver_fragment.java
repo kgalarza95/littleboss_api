@@ -81,7 +81,7 @@ public class producto_ver_fragment extends Fragment {
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buscarProducto("http://192.168.100.7/mysql_littleboss/buscar_producto.php?codigo="+edtCodigo.getText()+"");
+                buscarProducto("http://192.168.1.119/mysql_littleboss/buscar_producto.php?codigo="+edtCodigo.getText()+"");
             }
         });
 

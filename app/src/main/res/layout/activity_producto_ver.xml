@@ -113,9 +113,10 @@
                     android:ems="10"
                     android:gravity="center"
                     android:hint="Ingrese código"
-                    android:inputType="textPersonName"
+                    android:inputType="number"
                     android:textColor="#80000000"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <Button
                     android:id="@+id/btnBuscar"

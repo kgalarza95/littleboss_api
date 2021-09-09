@@ -94,7 +94,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:ems="10"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
 
 
@@ -147,7 +148,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:ems="10"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
                         android:id="@+id/txtApellido"
@@ -165,7 +167,8 @@
                         android:layout_marginTop="20dp"
                         android:ems="10"
                         android:inputType="text"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
                     <TextView
                         android:id="@+id/txtcorreo"
@@ -182,7 +185,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:ems="10"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                     <TextView
                         android:id="@+id/txtCelular"
@@ -200,7 +204,8 @@
                         android:layout_marginTop="20dp"
                         android:ems="10"
                         android:inputType="number"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
 
 

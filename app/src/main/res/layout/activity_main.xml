@@ -61,7 +61,8 @@
                         android:ems="10"
                         android:hint="Ingrese nombre de usuario"
                         android:inputType="textPersonName"
-                        android:textColor="#EFE9E9" />
+                        android:textColor="#EFE9E9"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                     <TextView
                         android:id="@+id/textView6"
@@ -90,7 +91,8 @@
                         android:ems="10"
                         android:hint="Ingrese su contraseña"
                         android:inputType="textPassword"
-                        android:textColor="#FBF3F3" />
+                        android:textColor="#FBF3F3"
+                        tools:ignore="TouchTargetSizeCheck" />
 
 
 

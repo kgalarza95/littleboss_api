@@ -31,7 +31,7 @@ import java.util.Map;
 //import com.google.android.material.textfield.TextInputEditText;
 //import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
-public class activity_codigo_unico extends AppCompatActivity {
+public class  activity_codigo_unico extends AppCompatActivity {
 
     EditText edtCodigop, edtDescripcionp, edtFecharegistrop, edtFechaEntregap, edtCantidadp, edtCostoEnviop, edtClientep, edtPagoTotalp;
     Button btnAgregar, btnEditar,btnEliminar, btnBuscar, btnLimpiar, btnRegresar;
@@ -84,7 +84,7 @@ public class activity_codigo_unico extends AppCompatActivity {
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buscarProducto("http://192.168.100.7/mysql_littleboss5/buscar_pedido.php?codigo="+edtCodigop.getText()+"");
+                buscarProducto("http://192.168.1.119/mysql_littleboss5/buscar_pedido.php?codigo="+edtCodigop.getText()+"");
             }
         });
 

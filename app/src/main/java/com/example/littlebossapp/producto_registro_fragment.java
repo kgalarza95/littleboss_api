@@ -93,7 +93,7 @@ public class producto_registro_fragment extends Fragment {
 
 
 
-                            PutData putData = new PutData("http://192.168.100.7/mysql_littleboss6_1/signup.php", "POST", field, data);
+                            PutData putData = new PutData("http://192.168.1.119/mysql_littleboss6_1/signup.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     //progressBar.setVisibility(View.GONE);

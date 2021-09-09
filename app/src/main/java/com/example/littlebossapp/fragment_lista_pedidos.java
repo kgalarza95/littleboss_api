@@ -35,7 +35,7 @@ public class fragment_lista_pedidos extends Fragment {
 
     EditText edtCodigop, edtDescripcionp, edtFecharegistrop, edtFechaEntregap, edtCantidadp, edtCostoEnviop, edtClientep, edtPagoTotalp;
     Button btnAgregar, btnEditar, btnEliminar, btnBuscar, btnLimpiar, btncancelar;
-    private String IP = "192.168.100.14";//"192.168.100.14";
+    private String IP = "192.168.1.119";//"192.168.100.14";
 
     RequestQueue requestQueue;
     //TextView textViewLogin;
@@ -83,11 +83,10 @@ public class fragment_lista_pedidos extends Fragment {
         });
 
  */
-
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buscarProducto("http://192.168.100.7/mysql_littleboss2/buscar_pedido.php?codigo="+edtCodigop.getText()+"");
+                buscarProducto("http://192.168.1.119/mysql_littleboss2/buscar_pedido.php?codigo="+edtCodigop.getText()+"");
             }
         });
 
@@ -102,7 +101,7 @@ public class fragment_lista_pedidos extends Fragment {
         btnEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ejecutarServicio("http://192.168.100.14/mysql_littleboss2/editar_pedido.php");
+                ejecutarServicio("http://192.168.1.119/mysql_littleboss2/editar_pedido.php");
 
             }
         });
@@ -110,7 +109,7 @@ public class fragment_lista_pedidos extends Fragment {
         btnEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                eliminarProducto("http://192.168.100.7/mysql_littleboss2/eliminar_pedido.php");
+                eliminarProducto("http://192.168.1.119/mysql_littleboss2/eliminar_pedido.php");
 
             }
         });
@@ -177,6 +176,7 @@ public class fragment_lista_pedidos extends Fragment {
             public void onResponse(JSONArray response) {
                 JSONObject jsonObject = null;
                 for (int i = 0; i < response.length(); i++) {
+
                     try {
                         jsonObject = response.getJSONObject(i);
                         edtDescripcionp.setText(jsonObject.getString("descripcion"));
@@ -185,10 +185,16 @@ public class fragment_lista_pedidos extends Fragment {
                         edtCantidadp.setText(jsonObject.getString("cantidad"));
                         edtCostoEnviop.setText(jsonObject.getString("costoEnvio"));
                         edtClientep.setText(jsonObject.getString("cliente"));
-                        edtPagoTotalp.setText(jsonObject.getString("pagototal"));
+                        edtPagoTotalp.setText(jsonObject.getString("pagototal" ));
+                        {
+                            Integer cantidad;
+                            Double costo, resultado;
 
-
-
+                            cantidad = Integer.valueOf(edtCantidadp.getText().toString());
+                            costo = Double.valueOf(edtCostoEnviop.getText().toString());
+                            resultado = cantidad * costo;
+                            edtPagoTotalp.setText("" + resultado);
+                        }
                     } catch (JSONException e) {
                         Toast.makeText(getContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
@@ -225,6 +231,16 @@ public class fragment_lista_pedidos extends Fragment {
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> parametros = new HashMap<String, String>();
                 parametros.put("codigo",edtCodigop.getText().toString());
+
+                    edtCodigop.setText("");
+                    edtDescripcionp.setText("");
+                    edtFecharegistrop.setText("");
+                    edtFechaEntregap.setText("");
+                    edtCantidadp.setText("");
+                    edtCostoEnviop.setText("");
+                    edtClientep.setText("");
+                    edtPagoTotalp.setText("");
+
                 return parametros;
             }
         };
@@ -258,7 +274,7 @@ public class fragment_lista_pedidos extends Fragment {
                         jsonObject = response.getJSONObject(i);
                         System.out.println("========================================================");
                         System.out.println("LLamada por fecha");
-                        System.out.println("repsuesta json PIN: " + jsonObject.getString("descripcion"));
+                        System.out.println("respuesta json PIN: " + jsonObject.getString("descripcion"));
                         if(!jsonObject.getString("fechaEntrega").isEmpty()){
                             edtCodigop.setText(jsonObject.getString("codigo"));
                             edtDescripcionp.setText(jsonObject.getString("descripcion"));
@@ -291,4 +307,6 @@ public class fragment_lista_pedidos extends Fragment {
         requestQueue.add(jsonArrayRequest);
     }
 
+
 }
+

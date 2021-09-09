@@ -122,7 +122,8 @@
                         android:hint="Ingrese código"
                         android:inputType="textPersonName"
                         android:textColor="#80000000"
-                        android:textSize="14sp" />
+                        android:textSize="14sp"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
                         android:id="@+id/btnBuscar"
@@ -208,7 +209,8 @@
                             android:ems="10"
                             android:inputType="textPersonName"
                             android:textColor="#8BC34A"
-                            android:textSize="14sp" />
+                            android:textSize="14sp"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -270,7 +272,8 @@
                             android:ems="10"
                             android:inputType="textPersonName"
                             android:textColor="#8BC34A"
-                            android:textSize="14sp" />
+                            android:textSize="14sp"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
                     </LinearLayout>
                 </LinearLayout>
 

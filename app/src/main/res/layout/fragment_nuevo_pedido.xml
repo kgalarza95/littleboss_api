@@ -58,8 +58,9 @@ tools:context=".fragment_nuevo_pedido">
                 android:background="@drawable/txt_ingreso_pedido"
                 android:ems="10"
                 android:hint="Ingrese código de pedido"
-                android:inputType="textPersonName"
-                android:paddingLeft="10dp" />
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -93,7 +94,8 @@ tools:context=".fragment_nuevo_pedido">
                 android:ems="10"
                 android:hint="Ingrese descripción del pedido"
                 android:inputType="textPersonName"
-                android:paddingLeft="10dp" />
+                android:paddingLeft="10dp"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
 
@@ -130,8 +132,9 @@ tools:context=".fragment_nuevo_pedido">
                 android:background="@drawable/txt_ingreso_pedido"
                 android:ems="10"
                 android:hint="DD-MM-AA"
-                android:inputType="textPersonName"
-                android:paddingLeft="10dp" />
+                android:inputType="datetime"
+                android:paddingLeft="10dp"
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -165,8 +168,9 @@ tools:context=".fragment_nuevo_pedido">
                 android:background="@drawable/txt_ingreso_pedido"
                 android:ems="10"
                 android:hint="DD-MM-AA"
-                android:inputType="textPersonName"
-                android:paddingLeft="10dp" />
+                android:inputType="datetime"
+                android:paddingLeft="10dp"
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -200,8 +204,9 @@ tools:context=".fragment_nuevo_pedido">
                 android:background="@drawable/txt_ingreso_pedido"
                 android:ems="10"
                 android:hint="Ingrese cantidad de productos"
-                android:inputType="textPersonName"
-                android:paddingLeft="10dp" />
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
 
@@ -236,8 +241,9 @@ tools:context=".fragment_nuevo_pedido">
                 android:background="@drawable/txt_ingreso_pedido"
                 android:ems="10"
                 android:hint="Ingrese costo de pedido"
-                android:inputType="textPersonName"
-                android:paddingLeft="10dp" />
+                android:inputType="numberDecimal"
+                android:paddingLeft="10dp"
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -272,7 +278,8 @@ tools:context=".fragment_nuevo_pedido">
                 android:ems="10"
                 android:hint="Ingrese nombre del cliente"
                 android:inputType="textPersonName"
-                android:paddingLeft="10dp" />
+                android:paddingLeft="10dp"
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -308,11 +315,13 @@ tools:context=".fragment_nuevo_pedido">
                 android:layout_marginRight="2sp"
                 android:layout_weight="1"
                 android:background="@drawable/txt_ingreso_pedido"
-                android:ems="10"
+                android:ems="6"
+                android:focusable="false"
                 android:gravity="center"
                 android:hint="presione boton"
-                android:inputType="textPersonName"
-                android:textSize="14sp" />
+                android:inputType="number"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <Button
                 android:id="@+id/btn_calcularpagop"

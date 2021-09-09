@@ -44,8 +44,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:ems="10"
+                android:inputType="number"
                 android:textSize="25dp"
-                android:inputType="number" />
+                tools:ignore="SpeakableTextPresentCheck" />
 
 
             <Button
@@ -115,8 +116,10 @@
                                 android:ems="10"
                                 android:inputType="textPersonName"
                                 android:paddingLeft="20dp"
+                                android:focusable="false"
                                 android:textColor="#80000000"
-                                android:textSize="14sp" />
+                                android:textSize="14sp"
+                                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -171,10 +174,12 @@
                                 android:layout_height="30dp"
                                 android:background="@drawable/txt_ingreso_pedido"
                                 android:ems="10"
-                                android:inputType="textPersonName"
+                                android:inputType="datetime"
                                 android:paddingLeft="20dp"
                                 android:textColor="#80000000"
-                                android:textSize="14sp" />
+                                android:textSize="14sp"
+                                android:focusable="false"
+                                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -229,10 +234,12 @@
                                 android:layout_height="30dp"
                                 android:background="@drawable/txt_ingreso_pedido"
                                 android:ems="10"
-                                android:inputType="textPersonName"
+                                android:inputType="datetime"
                                 android:paddingLeft="20dp"
+                                android:focusable="false"
                                 android:textColor="#80000000"
-                                android:textSize="14sp" />
+                                android:textSize="14sp"
+                                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -287,10 +294,12 @@
                                 android:layout_height="30dp"
                                 android:background="@drawable/txt_ingreso_pedido"
                                 android:ems="10"
-                                android:inputType="textPersonName"
+                                android:inputType="number"
                                 android:paddingLeft="20dp"
+                                android:focusable="false"
                                 android:textColor="#80000000"
-                                android:textSize="14sp" />
+                                android:textSize="14sp"
+                                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -346,10 +355,12 @@
                                 android:layout_height="30dp"
                                 android:background="@drawable/txt_ingreso_pedido"
                                 android:ems="10"
-                                android:inputType="textPersonName"
+                                android:inputType="numberDecimal"
                                 android:paddingLeft="20dp"
                                 android:textColor="#80000000"
-                                android:textSize="14sp" />
+                                android:textSize="14sp"
+                                android:focusable="false"
+                                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -408,7 +419,9 @@
                                 android:inputType="textPersonName"
                                 android:paddingLeft="20dp"
                                 android:textColor="#80000000"
-                                android:textSize="14sp" />
+                                android:textSize="14sp"
+                                android:focusable="false"
+                                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
                         </LinearLayout>
                     </LinearLayout>
 
@@ -465,10 +478,12 @@
                                 android:layout_height="30dp"
                                 android:background="@drawable/txt_ingreso_pedido"
                                 android:ems="10"
-                                android:inputType="textPersonName"
+                                android:inputType="number"
                                 android:paddingLeft="20dp"
                                 android:textColor="#80000000"
-                                android:textSize="14sp" />
+                                android:textSize="14sp"
+                                android:focusable="false"
+                                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
                         </LinearLayout>

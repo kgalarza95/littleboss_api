@@ -46,6 +46,7 @@
                 android:layout_marginEnd="5sp"
                 android:layout_marginRight="5sp"
                 android:layout_weight="1"
+                android:inputType="number"
                 android:background="@drawable/listapedido"
                 android:gravity="center"
                 android:hint="ingrese código" />
@@ -123,6 +124,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/lineanegraycolorgristext"
                 android:gravity="center|left"
+                android:inputType="datetime"
                 android:hint="detalle fecha registro"
                 android:paddingLeft="5sp" />
         </LinearLayout>
@@ -155,6 +157,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/lineanegraycolorgristext"
                 android:gravity="center|left"
+                android:inputType="datetime"
                 android:hint="detalle fecha entrega"
                 android:paddingLeft="5sp" />
         </LinearLayout>
@@ -186,6 +189,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/lineanegraycolorgristext"
                 android:gravity="center|left"
+                android:inputType="number"
                 android:hint="detalle cantidad"
                 android:paddingLeft="5sp" />
         </LinearLayout>
@@ -217,6 +221,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/lineanegraycolorgristext"
                 android:gravity="center|left"
+                android:inputType="numberDecimal"
                 android:hint="detalle costo"
                 android:paddingLeft="5sp" />
         </LinearLayout>
@@ -267,7 +272,7 @@
                 android:background="@drawable/lineanegraycolorgristext"
                 android:gravity="center"
                 android:paddingRight="27sp"
-                android:text="Pago total:"
+                android:text="Pago total"
                 android:textStyle="bold" />
 
             <EditText
@@ -279,6 +284,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/lineanegraycolorgristext"
                 android:gravity="center|left"
+                android:focusable="false"
                 android:hint="detalle pago total"
                 android:paddingLeft="5sp" />
         </LinearLayout>

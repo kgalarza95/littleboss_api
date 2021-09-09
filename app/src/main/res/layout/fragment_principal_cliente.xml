@@ -45,7 +45,8 @@
                 android:gravity="center"
                 android:text="@string/btnClientesRegistrar"
                 android:textColor="@color/black"
-                app:backgroundTint="@color/colorBoton1"></Button>>
+                app:backgroundTint="@color/colorBoton1"
+                tools:ignore="TextContrastCheck"></Button>>
 
             <Button
                 android:id="@+id/btnClienteEd"

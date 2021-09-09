@@ -169,7 +169,7 @@
                         android:background="@drawable/txt_ingreso_pedido"
                         android:ems="10"
                         android:hint="@string/codigo"
-                        android:inputType="textPersonName"
+                        android:inputType="number"
                         android:paddingLeft="20dp"
                         android:textColor="#80000000"
                         android:textSize="14sp" />
@@ -234,7 +234,7 @@
                         android:background="@drawable/txt_ingreso_pedido"
                         android:ems="10"
                         android:hint="@string/precio"
-                        android:inputType="textPersonName"
+                        android:inputType="number"
                         android:paddingLeft="20dp"
                         android:textColor="#80000000"
                         android:textSize="14sp" />
@@ -297,7 +297,7 @@
                         android:background="@drawable/txt_ingreso_pedido"
                         android:ems="10"
                         android:hint="@string/cantidad"
-                        android:inputType="textPersonName"
+                        android:inputType="number"
                         android:paddingLeft="20dp"
                         android:textColor="#80000000"
                         android:textSize="14sp" />
