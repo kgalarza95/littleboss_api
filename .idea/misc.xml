@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Kevin Galarza/AndroidStudioProjects/proyectApisAndroid/app/src/main/res/layout/activity_littleboss.xml" value="0.209375" />
+        <entry key="..\:/Users/Kevin Galarza/AndroidStudioProjects/proyectApisAndroid/app/src/main/res/layout/activity_main.xml" value="0.209375" />
+        <entry key="..\:/Users/Kevin Galarza/AndroidStudioProjects/proyectApisAndroid/app/src/main/res/layout/activity_producto_ver.xml" value="0.209375" />
+        <entry key="..\:/Users/Kevin Galarza/AndroidStudioProjects/proyectApisAndroid/app/src/main/res/layout/fragment_lista_pedidos.xml" value="0.209375" />
+        <entry key="..\:/Users/Kevin Galarza/AndroidStudioProjects/proyectApisAndroid/app/src/main/res/layout/fragment_pedidos.xml" value="0.209375" />
+        <entry key="..\:/Users/Kevin Galarza/AndroidStudioProjects/proyectApisAndroid/app/src/main/res/layout/fragment_principal_cliente.xml" value="0.209375" />
+        <entry key="..\:/Users/Kevin Galarza/AndroidStudioProjects/proyectApisAndroid/app/src/main/res/layout/fragment_producto_principal.xml" value="0.209375" />
+        <entry key="..\:/Users/Kevin Galarza/AndroidStudioProjects/proyectApisAndroid/app/src/main/res/layout/fragment_registrar_cliente.xml" value="0.209375" />
+        <entry key="..\:/Users/Kevin Galarza/AndroidStudioProjects/proyectApisAndroid/app/src/main/res/layout/producto_editar_fragment.xml" value="0.209375" />
         <entry key="..\:/Users/znava/AndroidStudioProjects/littlebossapp/app/src/main/res/layout/activity_codigo_unico.xml" value="0.264" />
         <entry key="..\:/Users/znava/AndroidStudioProjects/littlebossapp/app/src/main/res/layout/activity_littleboss.xml" value="0.275" />
         <entry key="..\:/Users/znava/AndroidStudioProjects/littlebossapp/app/src/main/res/layout/activity_main.xml" value="0.275" />

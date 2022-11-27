@@ -69,7 +69,7 @@ public class producto_ver_fragment extends Fragment {
         btnAgregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ejecutarServicio("http://192.168.31.142/mysql_littleboss/insertar_producto.php");
+                ejecutarServicio("http://192.168.1.44/mysql_littleboss/insertar_producto.php");
 
             }
         });
@@ -131,7 +131,7 @@ public class producto_ver_fragment extends Fragment {
         btnEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ejecutarServicio("http://192.168.31.142/mysql_littleboss/editar_producto.php");
+                ejecutarServicio("http://192.168.1.44/mysql_littleboss/editar_producto.php");
 
             }
         });
@@ -139,7 +139,7 @@ public class producto_ver_fragment extends Fragment {
         btnEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                eliminarProducto("http://192.168.31.142/mysql_littleboss/eliminar_producto.php");
+                eliminarProducto("http://192.168.1.44/mysql_littleboss/eliminar_producto.php");
 
             }
         });
